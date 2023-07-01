@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to start git
+    apt:
+      name:
+      state: restart
+  - name: i want to install git
+    apt:
+      name:
+      state: present
