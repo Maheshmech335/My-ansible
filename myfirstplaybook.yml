@@ -2,11 +2,15 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want to start git
+  - name: i want to install tree
     apt:
       name:
-      state: restart
+      state: present
   - name: i want to install git
     apt:
       name:
       state: present
+  - name: i want to install wget
+    apt:
+      name:
+      state: present    
