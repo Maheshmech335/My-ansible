@@ -9,8 +9,4 @@
   - name: i want to install git
     apt:
       name:
-      state: present
-  - name: i want to install wget
-    apt:
-      name:
-      state: present    
+      state: present 
